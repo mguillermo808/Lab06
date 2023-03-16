@@ -1,4 +1,4 @@
-def encode(password):
+def encode(password):       # shifts 8-digit password up three digits
     encoded_password = ""
     for digit in password:
         encoded_digit = str((int(digit) + 3) % 10)
@@ -6,7 +6,7 @@ def encode(password):
     return encoded_password
 
 
-def decode(encoded_password):   # daniel beeman
+def decode(encoded_password):   # daniel beeman; returns 8-digit password to original
     password = ""
     for digit in encoded_password:
         decoded_digit = str((int(digit) - 3) % 10)
@@ -14,7 +14,7 @@ def decode(encoded_password):   # daniel beeman
     return password
 
 
-def main():
+def main():     # main logic of option selections
     option = True
     while option:
         print("Menu")
