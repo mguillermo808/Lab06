@@ -31,7 +31,6 @@ def main():
             print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.\n")
         elif option == "3":
             option = False
-            break
 
 
 if __name__ == "__main__":
